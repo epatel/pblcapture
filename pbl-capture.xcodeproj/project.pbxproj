@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3AB888A8179A878E00D1BD1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB888A7179A878E00D1BD1C /* UIKit.framework */; };
+		3AB888AA179A878E00D1BD1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB888A9179A878E00D1BD1C /* Foundation.framework */; };
+		3AB888AC179A878E00D1BD1C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB888AB179A878E00D1BD1C /* CoreGraphics.framework */; };
+		3AB888B2179A878E00D1BD1C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AB888B0179A878E00D1BD1C /* InfoPlist.strings */; };
+		3AB888B4179A878E00D1BD1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB888B3179A878E00D1BD1C /* main.m */; };
+		3AB888B8179A878E00D1BD1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB888B7179A878E00D1BD1C /* AppDelegate.m */; };
+		3AB888BA179A878E00D1BD1C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB888B9179A878E00D1BD1C /* Default.png */; };
+		3AB888BC179A878E00D1BD1C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB888BB179A878E00D1BD1C /* Default@2x.png */; };
+		3AB888BE179A878E00D1BD1C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB888BD179A878E00D1BD1C /* Default-568h@2x.png */; };
+		3AB888C1179A878E00D1BD1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB888C0179A878E00D1BD1C /* ViewController.m */; };
+		3AB888C4179A878E00D1BD1C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB888C2179A878E00D1BD1C /* ViewController.xib */; };
+		3AB888CB179A87CB00D1BD1C /* PebbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB888CA179A87CB00D1BD1C /* PebbleKit.framework */; };
+		3AB888CD179A89C800D1BD1C /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB888CC179A89C800D1BD1C /* ExternalAccessory.framework */; };
+		3AB888CF179A89FD00D1BD1C /* PebbleVendor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB888CE179A89FD00D1BD1C /* PebbleVendor.framework */; };
+		3AB888D1179A8B5900D1BD1C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB888D0179A8B5900D1BD1C /* CoreBluetooth.framework */; };
+		3AB888D3179A8BC300D1BD1C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB888D2179A8BC300D1BD1C /* libz.dylib */; };
+		3AB888D8179A8D3B00D1BD1C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB888D6179A8C0700D1BD1C /* MessageUI.framework */; };
+		3AB888D9179A8D4000D1BD1C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB888D4179A8BE000D1BD1C /* CoreMotion.framework */; };
+		3AB888DB179AC0DC00D1BD1C /* pebble_watchblack.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB888DA179AC0DC00D1BD1C /* pebble_watchblack.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3AB888A4179A878E00D1BD1C /* pbl-capture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pbl-capture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AB888A7179A878E00D1BD1C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3AB888A9179A878E00D1BD1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3AB888AB179A878E00D1BD1C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3AB888AF179A878E00D1BD1C /* pbl-capture-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pbl-capture-Info.plist"; sourceTree = "<group>"; };
+		3AB888B1179A878E00D1BD1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3AB888B3179A878E00D1BD1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3AB888B5179A878E00D1BD1C /* pbl-capture-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pbl-capture-Prefix.pch"; sourceTree = "<group>"; };
+		3AB888B6179A878E00D1BD1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3AB888B7179A878E00D1BD1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3AB888B9179A878E00D1BD1C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3AB888BB179A878E00D1BD1C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3AB888BD179A878E00D1BD1C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3AB888BF179A878E00D1BD1C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3AB888C0179A878E00D1BD1C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3AB888C3179A878E00D1BD1C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		3AB888CA179A87CB00D1BD1C /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PebbleKit.framework; sourceTree = "<group>"; };
+		3AB888CC179A89C800D1BD1C /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		3AB888CE179A89FD00D1BD1C /* PebbleVendor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PebbleVendor.framework; sourceTree = "<group>"; };
+		3AB888D0179A8B5900D1BD1C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		3AB888D2179A8BC300D1BD1C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3AB888D4179A8BE000D1BD1C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		3AB888D6179A8C0700D1BD1C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		3AB888DA179AC0DC00D1BD1C /* pebble_watchblack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pebble_watchblack.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AB888A1179A878E00D1BD1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AB888D3179A8BC300D1BD1C /* libz.dylib in Frameworks */,
+				3AB888D1179A8B5900D1BD1C /* CoreBluetooth.framework in Frameworks */,
+				3AB888CD179A89C800D1BD1C /* ExternalAccessory.framework in Frameworks */,
+				3AB888A8179A878E00D1BD1C /* UIKit.framework in Frameworks */,
+				3AB888AA179A878E00D1BD1C /* Foundation.framework in Frameworks */,
+				3AB888AC179A878E00D1BD1C /* CoreGraphics.framework in Frameworks */,
+				3AB888CB179A87CB00D1BD1C /* PebbleKit.framework in Frameworks */,
+				3AB888CF179A89FD00D1BD1C /* PebbleVendor.framework in Frameworks */,
+				3AB888D8179A8D3B00D1BD1C /* MessageUI.framework in Frameworks */,
+				3AB888D9179A8D4000D1BD1C /* CoreMotion.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AB8889B179A878E00D1BD1C = {
+			isa = PBXGroup;
+			children = (
+				3AB888AD179A878E00D1BD1C /* pbl-capture */,
+				3AB888A6179A878E00D1BD1C /* Frameworks */,
+				3AB888A5179A878E00D1BD1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3AB888A5179A878E00D1BD1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AB888A4179A878E00D1BD1C /* pbl-capture.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AB888A6179A878E00D1BD1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AB888D6179A8C0700D1BD1C /* MessageUI.framework */,
+				3AB888D4179A8BE000D1BD1C /* CoreMotion.framework */,
+				3AB888D2179A8BC300D1BD1C /* libz.dylib */,
+				3AB888D0179A8B5900D1BD1C /* CoreBluetooth.framework */,
+				3AB888CC179A89C800D1BD1C /* ExternalAccessory.framework */,
+				3AB888CA179A87CB00D1BD1C /* PebbleKit.framework */,
+				3AB888CE179A89FD00D1BD1C /* PebbleVendor.framework */,
+				3AB888A7179A878E00D1BD1C /* UIKit.framework */,
+				3AB888A9179A878E00D1BD1C /* Foundation.framework */,
+				3AB888AB179A878E00D1BD1C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3AB888AD179A878E00D1BD1C /* pbl-capture */ = {
+			isa = PBXGroup;
+			children = (
+				3AB888DA179AC0DC00D1BD1C /* pebble_watchblack.png */,
+				3AB888B6179A878E00D1BD1C /* AppDelegate.h */,
+				3AB888B7179A878E00D1BD1C /* AppDelegate.m */,
+				3AB888BF179A878E00D1BD1C /* ViewController.h */,
+				3AB888C0179A878E00D1BD1C /* ViewController.m */,
+				3AB888C2179A878E00D1BD1C /* ViewController.xib */,
+				3AB888AE179A878E00D1BD1C /* Supporting Files */,
+			);
+			path = "pbl-capture";
+			sourceTree = "<group>";
+		};
+		3AB888AE179A878E00D1BD1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AB888AF179A878E00D1BD1C /* pbl-capture-Info.plist */,
+				3AB888B0179A878E00D1BD1C /* InfoPlist.strings */,
+				3AB888B3179A878E00D1BD1C /* main.m */,
+				3AB888B5179A878E00D1BD1C /* pbl-capture-Prefix.pch */,
+				3AB888B9179A878E00D1BD1C /* Default.png */,
+				3AB888BB179A878E00D1BD1C /* Default@2x.png */,
+				3AB888BD179A878E00D1BD1C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AB888A3179A878E00D1BD1C /* pbl-capture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AB888C7179A878E00D1BD1C /* Build configuration list for PBXNativeTarget "pbl-capture" */;
+			buildPhases = (
+				3AB888A0179A878E00D1BD1C /* Sources */,
+				3AB888A1179A878E00D1BD1C /* Frameworks */,
+				3AB888A2179A878E00D1BD1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "pbl-capture";
+			productName = "pbl-capture";
+			productReference = 3AB888A4179A878E00D1BD1C /* pbl-capture.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AB8889C179A878E00D1BD1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Memention AB";
+			};
+			buildConfigurationList = 3AB8889F179A878E00D1BD1C /* Build configuration list for PBXProject "pbl-capture" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3AB8889B179A878E00D1BD1C;
+			productRefGroup = 3AB888A5179A878E00D1BD1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AB888A3179A878E00D1BD1C /* pbl-capture */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AB888A2179A878E00D1BD1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AB888B2179A878E00D1BD1C /* InfoPlist.strings in Resources */,
+				3AB888BA179A878E00D1BD1C /* Default.png in Resources */,
+				3AB888BC179A878E00D1BD1C /* Default@2x.png in Resources */,
+				3AB888BE179A878E00D1BD1C /* Default-568h@2x.png in Resources */,
+				3AB888C4179A878E00D1BD1C /* ViewController.xib in Resources */,
+				3AB888DB179AC0DC00D1BD1C /* pebble_watchblack.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AB888A0179A878E00D1BD1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AB888B4179A878E00D1BD1C /* main.m in Sources */,
+				3AB888B8179A878E00D1BD1C /* AppDelegate.m in Sources */,
+				3AB888C1179A878E00D1BD1C /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3AB888B0179A878E00D1BD1C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AB888B1179A878E00D1BD1C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3AB888C2179A878E00D1BD1C /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AB888C3179A878E00D1BD1C /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AB888C5179A878E00D1BD1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3AB888C6179A878E00D1BD1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AB888C8179A878E00D1BD1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pbl-capture/pbl-capture-Prefix.pch";
+				INFOPLIST_FILE = "pbl-capture/pbl-capture-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3AB888C9179A878E00D1BD1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pbl-capture/pbl-capture-Prefix.pch";
+				INFOPLIST_FILE = "pbl-capture/pbl-capture-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AB8889F179A878E00D1BD1C /* Build configuration list for PBXProject "pbl-capture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AB888C5179A878E00D1BD1C /* Debug */,
+				3AB888C6179A878E00D1BD1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AB888C7179A878E00D1BD1C /* Build configuration list for PBXNativeTarget "pbl-capture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AB888C8179A878E00D1BD1C /* Debug */,
+				3AB888C9179A878E00D1BD1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AB8889C179A878E00D1BD1C /* Project object */;
+}
