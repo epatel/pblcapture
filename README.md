@@ -1,43 +1,29 @@
 # pbl capture
 
-This is the iPhone app for `pblcapture.c` that will receive the screenshots.
+This is the iPhone app for `pblcapture` that will receive the screenshots.
 
-# In the Pebble app
+This version uses the new SDK 2.0 javascript bridge. Like before the framebuffer will be sent in a number of chunks to this app which will reassemble them to an image which can be saved to the camera roll.
 
-For an example see [https://github.com/epatel/pblindex/blob/capture/src/pblindex.c](https://github.com/epatel/pblindex/blob/capture/src/pblindex.c). You can also find `pblcapture.h` and `pblcapture.c` to be used in the Pebble app there.
+# Usage 
 
-Use `PBL_CAPTURE_UUID` for App UUID ie.
+To use this utility there are a couple of steps to be made. First, add the javascript part below to the `pebble-js-app.js` file (or add one).
 
-    PBL_APP_INFO(PBL_CAPTURE_UUID, // Here
-                 "My Watch", "My Name",
-                 1, 0,
-                 RESOURCE_ID_WATCH_MENU_ICON,
-                 APP_INFO_WATCH_FACE);
+<pre>
+Pebble.addEventListener("appmessage",
+                        function(e) {
+                          if (e.payload[1396920900]) { // 'SCRD'
+                            var req = new XMLHttpRequest();
+                            req.open('POST', "http://127.0.0.1:9898", true);
+                            req.send(JSON.stringify(e.payload));
+                          }
+                        });
+</pre>
 
-There is a two step setup
+Then add the files `pblcapture.h` and `pblcapture.c` to the pebble project (find them under `pebble_src` here).
 
-Call `prepare_pbl_capture_main(..)` in `pbl_main(..)`. 
+Last add calls to `pbl_capture_init()`, `pbl_capture_send()` and `pbl_capture_deinit()`. See example here https://github.com/epatel/pblindex/blob/master/src/pblindex.c (search for `MAKE_SCREEN_SHOT`)
 
-    void pbl_main(void *params) {
-        PebbleAppHandlers handlers = {
-            .init_handler = &init_handler
-        };
-    
-        prepare_pbl_capture_main(&handlers); // Step one
-	
-        app_event_loop(params, &handlers);
-    }
+Place the call to `pbl_capture_init()` after the window has been created. Also if you call `app_message_open()` place this call after that and after registering the callbacks, and give `pbl_capture_init()` true as last parameter. If you are not using `app_message_open()` somewhere (you should also add a `pebble-js-app.js` file) give `pbl_capture_init()` false as the last parameter and it will do the `app_message_open()` for you.
 
-Call `prepare_pbl_capture_init(..)` in the init handler
-
-    void init_handler(AppContextRef app_ctx) {
-        window_init(&window, "My Watch");
-        window_stack_push(&window, true);
-    
-        prepare_pbl_capture_init(app_ctx); // Step two
-    }
-
-The first step setup the communication buffers for the remote. The second step adds a timer handler, which will be used to send the screenshot.
-
-When the app is displaying the wanted screenshot call `pbl_capture_send()`. Yeah, you need to be connected and running `pbl capture` on the iPhone.
-
+Have fun!
+Edward
