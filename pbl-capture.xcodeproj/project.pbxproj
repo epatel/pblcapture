@@ -36,6 +36,7 @@
 		3A905F71182FD97A000E01A5 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8803E3182F0C5600EE0E52 /* DDFileLogger.m */; };
 		3A905F72182FD97D000E01A5 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8803E5182F0C5600EE0E52 /* DDLog.m */; };
 		3A905F73182FD980000E01A5 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8803E7182F0C5600EE0E52 /* DDTTYLogger.m */; };
+		3A905F771830155A000E01A5 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A905F761830155A000E01A5 /* Media.xcassets */; };
 		3AB888A8179A878E00D1BD1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB888A7179A878E00D1BD1C /* UIKit.framework */; };
 		3AB888AA179A878E00D1BD1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB888A9179A878E00D1BD1C /* Foundation.framework */; };
 		3AB888AC179A878E00D1BD1C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB888AB179A878E00D1BD1C /* CoreGraphics.framework */; };
@@ -111,6 +112,7 @@
 		3A88040C182F0D2200EE0E52 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		3A88040E182F0F9700EE0E52 /* MyHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHTTPConnection.h; sourceTree = "<group>"; };
 		3A88040F182F0F9700EE0E52 /* MyHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHTTPConnection.m; sourceTree = "<group>"; };
+		3A905F761830155A000E01A5 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		3AB888A4179A878E00D1BD1C /* pbl-capture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pbl-capture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB888A7179A878E00D1BD1C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3AB888A9179A878E00D1BD1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -312,6 +314,7 @@
 				3AB888DA179AC0DC00D1BD1C /* pebble_watchblack.png */,
 				3A8803AF182F0C3B00EE0E52 /* ThirdParty */,
 				3AB888AE179A878E00D1BD1C /* Supporting Files */,
+				3A905F761830155A000E01A5 /* Media.xcassets */,
 			);
 			path = "pbl-capture";
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				3AB888BC179A878E00D1BD1C /* Default@2x.png in Resources */,
 				3AB888BE179A878E00D1BD1C /* Default-568h@2x.png in Resources */,
 				3AB888C4179A878E00D1BD1C /* ViewController.xib in Resources */,
+				3A905F771830155A000E01A5 /* Media.xcassets in Resources */,
 				3AB888DB179AC0DC00D1BD1C /* pebble_watchblack.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +517,8 @@
 		3AB888C8179A878E00D1BD1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -528,6 +534,8 @@
 		3AB888C9179A878E00D1BD1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
