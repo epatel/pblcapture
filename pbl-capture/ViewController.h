@@ -10,11 +10,10 @@
 
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *connectedLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
-
 @property (weak, nonatomic) IBOutlet UIButton *saveButton;
 
+- (void)updateReceivedMessage:(NSDictionary*)update;
 - (IBAction)save:(id)sender;
 
 @end

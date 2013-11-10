@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class HTTPServer;
+
 @class ViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) HTTPServer *httpServer;
 
 @property (strong, nonatomic) UIWindow *window;
 
