@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#include "status-bar.h"
+
 @interface ViewController () {
     unsigned char frameBuffer[144*168*4];
 }
@@ -68,12 +70,21 @@
     NSArray *data = update[@"1396920900"]; // 'SCRD'
     if (data) {
         int start = [update[@"1396920915"] integerValue]; // 'SCRS'
-        if (!start) {
+        if (!start || start == 16*18) {
             for (int i=0; i<sizeof(frameBuffer); i+=4) {
                 frameBuffer[i+0] = 0x00;
                 frameBuffer[i+1] = 0x00;
                 frameBuffer[i+2] = 0x00;
                 frameBuffer[i+3] = 0xff;
+            }
+            if (start) {
+                for (int y=0; y<16; y++) {
+                    for (int x=0; x<144; x++) {
+                        frameBuffer[4*(144*y+x)+0] = STATUS_BAR_pixel_data[3*(144*y+x)];
+                        frameBuffer[4*(144*y+x)+1] = STATUS_BAR_pixel_data[3*(144*y+x)];
+                        frameBuffer[4*(144*y+x)+2] = STATUS_BAR_pixel_data[3*(144*y+x)];
+                    }
+                }
             }
         }
         int length = data.count;
