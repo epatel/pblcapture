@@ -1,3 +1,7 @@
+# OBSOLETE!
+
+pblcapture is now obsolete as screenshooting has been added to Pebble SDK 2.0 BETA 2.
+
 # pbl capture
 
 This is the iPhone app for `pblcapture` that will receive the screenshots.
